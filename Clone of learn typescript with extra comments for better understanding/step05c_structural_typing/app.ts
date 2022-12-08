@@ -67,7 +67,7 @@ var x: { id: number; [x: string]: any }; //Note now 'x' can have any name, just 
 x = { id: 1, fullname: "Zia" }; // Ok, `fullname` matched by index signature
 
 //Case 3
-myType = { id: 2, name: "Tom", age: 22 }; //Case 3: Error, excess property
+myType = { id: 2, name: "Tom", age: 22 }; //Case 3: Error, excess property in fresh object without index signature
 
 //=================================================
 
@@ -89,7 +89,7 @@ var x: { id: number; [x: string]: any }; //Note now 'x' can have any name, just 
 var y = { id: 1, fullname: "Zia" };
 x = y; // Ok, `fullname` matched by index signature
 
-var myType4 = { id: 2, name: "Tom", age: 22 };
+let myType4 = { id: 2, name: "Tom", age: 22 };
 
 //Case 3
 myType = myType4; //Case 3: Ok, excess property allowed in case of stale object which is different from fresh object
