@@ -16,8 +16,9 @@ let student: Student = {
   age: 30,
 };
 let abuhurairah: Student = {
-  name: "Abu Hurairah",
+  name: "Abu Hurairah", //working because Student type has age as an optional type
 };
+
 console.log(student["name"]);
 console.log(student.age);
 
