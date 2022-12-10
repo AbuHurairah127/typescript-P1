@@ -10,8 +10,9 @@ myval = {}; // OK
 myval = Math.random; // OK
 myval = null; // OK
 myval = undefined; // OK
-myval = () => { console.log('Hey again!'); }; // OK
-
+myval = () => {
+  console.log("Hey again!");
+}; // OK
 
 //Unknown
 
@@ -25,11 +26,12 @@ value = {}; // OK
 value = Math.random; // OK
 value = null; // OK
 value = undefined; // OK
-value = () => { console.log('Hey again!'); }; // OK
-
+value = () => {
+  console.log("Hey again!");
+}; // OK
 
 // Assigning a value of type unknown to variables of other types
-
+// Unknown typed variables can only be stored in variables of any or unknown type
 let val: unknown;
 
 const val1: unknown = val; // OK
@@ -41,19 +43,19 @@ const val6: Record<string, any> = val; // Will throw error
 const val7: any[] = val; // Will throw error
 const val8: (...args: any[]) => void = val; // Will throw error
 
-
 // Never
-
+let variables: string & number; //This type of variables is said to be as a never situation
+// because this is not possible for a value to achieve both string's and number's properties at the same time
 // Function returning never must not have a reachable end point
 function error(message: string): never {
   throw new Error(message);
 }
- 
+
 // Inferred return type is never
 function fail() {
   return error("Something failed");
 }
- 
+
 // Function returning never must not have a reachable end point
 function infiniteLoop(): never {
   while (true) {}
