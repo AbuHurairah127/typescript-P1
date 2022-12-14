@@ -43,6 +43,12 @@ class Robot {
     this.name = name;
   }
 }
+// Alternative correct syntax for creating a class is :
+class AlternativeSyntax {
+  constructor(public name: string) {
+    this.name = name;
+  }
+}
 
 let h: Human = new Human("Tom");
 let a: Animal = new Animal("Goat");
