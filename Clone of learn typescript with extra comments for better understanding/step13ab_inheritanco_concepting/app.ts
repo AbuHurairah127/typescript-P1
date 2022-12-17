@@ -29,3 +29,22 @@ bassam.showFullName();
 // and store a child object as Animal is having Donkey or Snake in the previous file, it's true
 // But the opposite will not happen
 // Mean to say that we can store a parent object in the child typed obbject
+class A {
+  constructor() {
+    this.MyvirtualMethod();
+  }
+
+  protected MyvirtualMethod(): void {
+    console.log("A");
+  }
+}
+
+class B extends A {
+  private testString: string = "B";
+
+  public MyvirtualMethod(): void {
+    console.log(this.testString); // This becomes undefined
+  }
+}
+
+let obj = new B();
