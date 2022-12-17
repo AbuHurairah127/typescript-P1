@@ -15,3 +15,12 @@ class User {
   readonly city: string = "Faisalabad";
   constructor(public age: number, private email: string) {}
 }
+// Basically there are three main pillars of OOPs,
+// -> Inheritance
+// -> Encapsulation
+// -> Polymorphism
+
+// **********************************************
+// But in some of the modern blogs and books it is written that
+// there are 4 pillars of OOPs
+// 3 the old one and Abstraction

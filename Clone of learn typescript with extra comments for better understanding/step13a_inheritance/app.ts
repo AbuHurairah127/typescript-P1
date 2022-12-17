@@ -70,6 +70,7 @@ let d1: Horse = new Donkey("Worker", 200); //this is possible see below link for
 // If you'd like to prevent Animal from being assigned to a Human, you can add a private property to Animal,
 // since private and protected properties need to originate from the same declaration to be compatible.
 
+/* Checking if the object `d1` is an instance of the class `Animal`. */
 console.log("is Animal? " + (d1 instanceof Animal)); // true
 console.log("is Donkey? " + (d1 instanceof Donkey)); // true
 console.log("is Horse? " + (d1 instanceof Horse)); // false -- variable has type Horse but actual object is Donkey therefore its giving false for horse
