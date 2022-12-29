@@ -1,8 +1,8 @@
-# JSON ( Javascript Object Notation ) 
+# JSON ( Javascript Object Notation )
 
-1. JSON stands for Javascript Object Notation. 
-2. JSON is a text-based data format that is used to store and transfer data.
-3. // JSON syntax
+1.  JSON stands for Javascript Object Notation.
+2.  JSON is a text-based data format that is used to store and transfer data.
+3.  // JSON syntax
 
     {
 
@@ -16,15 +16,14 @@
 
 But wait, Is JSON is similar to javaScript objects?
 
-The Answer is No. 
+The Answer is No.
 
 1. JavaScript objects can contain functions but JSON not.
 2. JavaScript objects can only be used in JavaScript but JSON can be created and used by other programming languages.
 
-
 ## JSON Data
 
-1. JSON data consists of key/value pairs similar to JavaScript object properties. 
+1. JSON data consists of key/value pairs similar to JavaScript object properties.
 2. The key and values are written in double quotes separated by a :.
 3. Example :
 
@@ -36,9 +35,9 @@ The Answer is No.
 
 ## JSON Object
 
-1. The JSON object is written inside curly braces { }. 
-2. JSON objects can contain multiple key/value pairs. 
-3. Example :
+1.  The JSON object is written inside curly braces { }.
+2.  JSON objects can contain multiple key/value pairs.
+3.  Example :
 
         // JSON object
 
@@ -46,8 +45,8 @@ The Answer is No.
 
 ## JSON Array
 
-1. JSON array is written inside square brackets [ ].
-2. Example : 
+1.  JSON array is written inside square brackets [ ].
+2.  Example :
 
         // JSON array
 
@@ -55,8 +54,8 @@ The Answer is No.
 
 ## Accessing JSON Data
 
-1. We can access JSON data using the dot notation. 
-2. Example : 
+1.  We can access JSON data using the dot notation.
+2.  Example :
 
         // JSON object
 
@@ -66,8 +65,8 @@ The Answer is No.
 
         console.log(detail. name); // Vipin
 
-3. We can also use square bracket syntax [] to access JSON data.
-4. Example :
+3.  We can also use square bracket syntax [] to access JSON data.
+4.  Example :
 
         // JSON object
 
@@ -80,14 +79,15 @@ The Answer is No.
 
     // accessing JSON object
 
-    console.log(detail["age"]); // Vipin
+    console.log(detail["age"]); // 21
 
 ## Use of JSON
-1. JSON is the most commonly used format for transmitting data (data interchange) from a server to a client and vice-versa. 
+
+1. JSON is the most commonly used format for transmitting data (data interchange) from a server to a client and vice-versa.
 2. JSON data are very easy to parse and use.
 3. JSON is language independent(We can create and use JSON in other programming languages too).
 
-## Examples of JSON 
+## Examples of JSON
 
 1. [package.json](https://docs.npmjs.com/cli/v9/configuring-npm/package-json)
 2. [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
