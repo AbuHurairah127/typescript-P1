@@ -18,7 +18,7 @@ let myAdd2: (x: number, y: number) => number = function (
   return x + y;
 };
 
-//type names dont matter
+//type names don't matter
 let myAdd3: (baseValue: number, increment: number) => number = function (
   x: number,
   y: number

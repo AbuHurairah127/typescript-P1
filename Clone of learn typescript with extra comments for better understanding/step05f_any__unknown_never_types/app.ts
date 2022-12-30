@@ -42,6 +42,8 @@ const val5: string = val; // Will throw error
 const val6: Record<string, any> = val; // Will throw error
 const val7: any[] = val; // Will throw error
 const val8: (...args: any[]) => void = val; // Will throw error
+//unknown type sirf or sirf unknown or any ko hi assign ho skti h
+// any type sb ko hi assign ho skti h
 
 // Never
 let variables: string & number; //This type of variables is said to be as a never situation
