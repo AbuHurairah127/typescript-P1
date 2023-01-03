@@ -1,5 +1,5 @@
 // Basic concept of inheritance done
-// "Super" keyword is use to access a property of parent Class
+// "Super" keyword is use to access properties of parent Class
 
 class Human {
   private name: string;
