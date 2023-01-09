@@ -1,2 +1,10 @@
-let message: String = "Abu hurairah is a good boy";
-console.log(message);
+import inquirer from "inquirer";
+
+const user = await inquirer.prompt([
+  {
+    name: "Age",
+    type: "number",
+    message: "enter your age",
+  },
+]);
+console.log(user.Age);

@@ -1,4 +1,4 @@
-Read:
+Read from this links:
 
 https://github.com/Microsoft/TypeScript/issues/5303
 
